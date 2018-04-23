@@ -1,0 +1,36 @@
+body {
+    font-family: 'Josefin Slab';
+}
+
+ul.navigation-bar {
+    background-color: #505050;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+ul.navigation-bar li {
+    float: left;
+}
+
+ul.navigation-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+ul.navigation-bar li.right {
+    float: right;
+}
+
+@media (max-width:768px) {
+    .navigation-bar {
+        display: grid;
+        grid-template-columns: 'auto auto';
+    }
+}
